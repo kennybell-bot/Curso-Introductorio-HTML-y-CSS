@@ -1,0 +1,113 @@
+/* Estilos seleccion por presencia
+p[class]{
+    color: blue;
+    font-size: larger;
+}
+
+
+/* Estilos seleccion por valor signo =
+p[class="cualquiera"]{
+    color: red;
+    font-size: larger;
+}
+*/
+
+/* Estilos seleccion por valor signo ~=
+p[class~="cualquiera"]{
+    color: red;
+    font-size: larger;
+}
+*/
+
+/* Estilos seleccion por valor signo |=
+p[class|="clase"]{
+    color: green;
+    font-size: larger;
+}
+*/
+
+
+/*Estilos seleccion por valor subacadena signo ^=
+p[class^="c"]{
+    color: green;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+*/
+
+/*
+p[class$="a"]{
+    color: rgb(255, 8, 210);
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+*/
+
+/*
+p[class*="b"]{
+    color: rgb(246, 246, 0);
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*
+
+/*
+h2[class="hola" i]{
+    font-size: 45px;
+}
+*/
+
+#otroid{
+    background-color: #4CAF50;
+}
+
+#otroid:hover{
+    background-color: rgb(254, 3, 3);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+#botonFicus{
+    background-color: aqua;
+}
+
+#botonFicus:focus{
+    background-color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+ul *:first-child{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+.cualquiera::first-line{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+}
+
+.cualquiera::first-letter{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+
+.cualquiera::before{
+    content: "lo que queremos poner antes";
+}
+
+.cualquiera::after{
+    color: aqua;
+    content: "Lo que va despues";
+}
+
+
+.otra::selection{
+    background-color: black;
+    color: white;
+}
